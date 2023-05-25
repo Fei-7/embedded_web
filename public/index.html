@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Progress Bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <div class="smart-bin">Smart Bin</div>
+    <!-- Dry Bin -->
+    <div class="dry" id="dry">
+      Dry
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="dry-percentage"></div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="480px"
+          height="480px"
+        >
+          <defs>
+            <linearGradient id="DryGradientColor">
+              <stop offset="0%" stop-color="#e71376" />
+              <stop offset="100%" stop-color="#ff921f" />
+            </linearGradient>
+          </defs>
+          <circle
+            id="dry-circle"
+            cx="200"
+            cy="200"
+            r="175"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+      <div class="count" id="dry-count"></div>
+      <div class="notification" id="dry-noti">Still fine</div>
+    </div>
+    <!-- Wet Bin -->
+    <div class="wet" id="wet">
+      Wet
+      <div class="skill">
+        <div class="outer">
+          <div class="inner">
+            <div id="wet-percentage"></div>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          width="480px"
+          height="480px"
+        >
+          <defs>
+            <linearGradient id="WetGradientColor">
+              <stop offset="0%" stop-color="#29a3ff" />
+              <stop offset="100%" stop-color="#673ab7" />
+            </linearGradient>
+          </defs>
+          <circle
+            id="wet-circle"
+            cx="200"
+            cy="200"
+            r="175"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+      <div class="count" id="wet-count"></div>
+      <div class="notification" id="wet-noti">Still fine</div>
+    </div>
+  </body>
+</html>
